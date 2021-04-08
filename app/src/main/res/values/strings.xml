@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BeginnerApplication</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="application_name">Interview Application</string>
+    <string name="user_name">User name</string>
+    <string name="pass_word">Pass word</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="txt_title">Famous</string>
+    <string name="txt_email">Email</string>
+    <string name="btn_login">Login</string>
+    <string name="txt_nof">No account yet? Create one</string>
+    <string name="txt_enter_email">Please enter your email!!!</string>
+    <string name="please_enter_password">Please enter Password!!!!</string>
+    <string name="email">Email</string>
+</resources>
