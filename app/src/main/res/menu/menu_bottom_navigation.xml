@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_monitoring"
+        android:icon="@drawable/ic_monitoring"
+        android:title="@string/monitoring" />
+    <item
+        android:id="@+id/navigation_contacts"
+        android:icon="@drawable/ic_contacts"
+        android:title="@string/contacts" />
+    <item
+        android:id="@+id/navigation_personal"
+        android:icon="@drawable/ic_person"
+        android:title="@string/personal"/>
+
+    <item
+        android:id="@+id/navigation_proplem"
+        android:icon="@drawable/ic_open_lock"
+        android:title="@string/proplem"/>
+    <item
+        android:id="@+id/navigation_other"
+        android:icon="@drawable/ic_other"
+        android:title="@string/other" />
+
+</menu>

@@ -19,4 +19,27 @@
     <string name="txt_enter_email">Please enter your email!!!</string>
     <string name="please_enter_password">Please enter Password!!!!</string>
     <string name="email">Email</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_search">Tìm kiếm</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="monitoring">Giám sát</string>
+    <string name="personal">Cá nhân</string>
+    <string name="contacts">Danh bạ</string>
+    <string name="proplem">Sự cố</string>
+    <string name="other">Khác</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
 </resources>
