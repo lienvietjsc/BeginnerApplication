@@ -1,32 +1,51 @@
 package com.internview.activity
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import com.internview.R
+import com.internview.activity.MainActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.myapplication.CustomAdapter
+import androidx.recyclerview.widget.RecyclerView
 
-class LoginActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
+/**
+ * A simple [Fragment] subclass as the default destination in the navigation.
+ */
+class LoginActivity : AppCompatActivity()
+{
+    lateinit var btnLogin: AppCompatButton
+    lateinit var txtEmail: EditText
+    lateinit var txtPassWord: EditText
+    val loginEmail = "buihuyhoang271296@gmail.com"
+    val loginpassword = "Hoang@2712"
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-//        setSupportActionBar(findViewById(R.id.toolbar))
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
+        btnLogin = findViewById(R.id.btn_login)
+        txtEmail = findViewById(R.id.txt_email)
+        txtPassWord = findViewById(R.id.txt_pass_word)
+        btnLogin.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            /* start your next activity */
+            if (txtEmail.text.toString().trim() == "") Toast.makeText(applicationContext,"Please enter Email!", Toast.LENGTH_SHORT).show()
+            if (txtPassWord.text.toString().trim() == "") Toast.makeText(applicationContext,"Please enter Password!", Toast.LENGTH_SHORT)
+                .show()
+            if (txtEmail.text.toString().trim() != loginEmail || txtPassWord.text.toString().trim() != loginpassword)
+            {
+                Toast.makeText(applicationContext, "Password or Email is wrong!!!", Toast.LENGTH_SHORT).show()
+            }else{
+                startActivity(intent)
+            }
         }
     }
 }
